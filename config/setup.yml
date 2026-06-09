@@ -1,0 +1,35 @@
+%YAML:1.0
+---
+
+
+cam_left:  "http://192.168.18.154:81/stream"
+cam_right: "http://192.168.18.149:81/stream"
+
+board_width:    8
+board_height:   5
+
+square_size_mm: 28.0
+
+calib_images: "data/calibration"
+calib_file:   "config/stereo.yml"
+
+# tomo el haar para detectar caras
+face_cascade: "/home/pepe/opencv1/share/opencv4/haarcascades/haarcascade_frontalface_alt2.xml"
+
+# Offset de disparidad en pixeles. El SGBM sobreestima la disparidad por
+# desalineacion residual tras la rectificacion, causando error no lineal que
+# crece con la distancia. Restar este valor corrige ese sesgo.
+# Si mides y el resultado da MENOS de lo real: aumentar. Si da MAS: reducir.
+disp_offset: 7.0
+
+
+#rm -rf data/calibration/left/* data/calibration/right/*
+
+#make run_capture     
+#make run_calibrate    
+#make run_rectify      
+#make run_disparidad   
+#make run_distancia    
+
+
+

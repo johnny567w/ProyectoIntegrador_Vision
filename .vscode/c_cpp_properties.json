@@ -1,0 +1,18 @@
+{
+  "configurations": [
+    {
+      "name": "Linux",
+      "includePath": [
+        "${workspaceFolder}/include",
+        "${workspaceFolder}/src",
+        "/home/pepe/opencv1/include/opencv4"
+      ],
+      "defines": [],
+      "compilerPath": "/usr/bin/g++",
+      "cppStandard": "c++17",
+      "cStandard": "c11",
+      "intelliSenseMode": "linux-gcc-x64"
+    }
+  ],
+  "version": 4
+}
